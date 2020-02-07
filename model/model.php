@@ -8,3 +8,5 @@
  *                  [add $logName in function setFullPath]
  * Git source  :    [link]
  */
+
+require_once "dbConnector.php";

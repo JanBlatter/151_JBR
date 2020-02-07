@@ -2,8 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f6b2ab00-b284-48bf-95b3-e5b3b6546a1d" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/model/dbConnector.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/view/login.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -60,7 +58,7 @@
       <workItem from="1549388380762" duration="156000" />
       <workItem from="1549388617793" duration="44000" />
       <workItem from="1549389792708" duration="600000" />
-      <workItem from="1581070202485" duration="1346000" />
+      <workItem from="1581070202485" duration="2026000" />
     </task>
     <servers />
   </component>
