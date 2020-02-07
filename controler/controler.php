@@ -8,3 +8,9 @@
  *                  [add $logName in function setFullPath]
  * Git source  :    [link]
  */
+
+
+function login($POST){
+    $_GET['action']="login";
+
+}
