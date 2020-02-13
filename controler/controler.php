@@ -10,7 +10,9 @@
  */
 
 
-function login($POST){
-    $_GET['action']="login";
+function login($POST)
+{
+    $_GET['action'] = "login";
 
 }
+
