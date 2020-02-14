@@ -74,4 +74,4 @@ Un contrat sera signé à chaque location. D'autre part nous travaillons en étr
 
 <?php
   $contenu = ob_get_clean();
-  require "gabarit.php";
+  require "view/gabarit.php";

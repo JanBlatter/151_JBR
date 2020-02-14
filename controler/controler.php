@@ -8,11 +8,17 @@
  *                  [add $logName in function setFullPath]
  * Git source  :    [link]
  */
-
+function home()
+{
+    $_GET['action'] = "home";
+    require "view/home.php";
+}
 
 function login($POST)
 {
     $_GET['action'] = "login";
+    require "view/login.php";
 
 }
+
 
