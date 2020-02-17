@@ -12,8 +12,7 @@ if (isset($_GET['action'])){            /* Si action est activé , alors va sur 
     switch ($action){
         case 'home':
          home();
-         break;
-                            /* Switch qui permet d'aller vers une page en fonction de l'action */
+         break;/* Switch qui permet d'aller vers une page en fonction de l'action */
         case 'login':
             login(@$_POST);
             break;

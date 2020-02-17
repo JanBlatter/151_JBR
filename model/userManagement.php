@@ -8,7 +8,3 @@
 require_once "dbConnector.php";
 
 
-function Checklogin();
-{
-
-}
