@@ -8,6 +8,9 @@
  *                  [add $logName in function setFullPath]
  * Git source  :    [link]
  */
+
+require_once "model/userManagement.php";
+
 function home()
 {
     $_GET['action'] = "home";
@@ -17,7 +20,15 @@ function home()
 function login($POST)
 {
     $_GET['action'] = "login";
-    require "view/login.php";
+    $username=@$_POST["username"];
+    $password=@$_POST["password"];
+    if (isset($username) && isset($password)){
+        checkLogin($username, $password);
+    }
+    else{
+        require "view/login.php";
+    }
+
 
 }
 

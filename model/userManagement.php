@@ -8,3 +8,12 @@
 require_once "dbConnector.php";
 
 
+function checkLogin($username, $password)
+{
+    $requete = "SELECT userEmailAddress, userPsw FROM users;";
+    $result = executeQuery($requete);
+
+    require_once 'model/dbConnector.php';
+    $queryResult = executeQuery($requete);
+
+}

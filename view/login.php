@@ -12,13 +12,13 @@ $titre="Rent  A Snow - Accueil"
         <br>
         <h1> Login </h1>
         <b>Username:</b><br>
-        <input  type="email" name="username" value="" placeholder="username" required>
+        <input  type="email" name="username" value="" placeholder="enter email adress" required>
         <br>
         <b>Password:</b><br>
-        <input type="password" name="password" value="" placeholder="password" required>
+        <input type="password" name="password" value="" placeholder="enter Password" required>
         <br>
         <br>
-        <input type="submit" value="submit">
+        <input type="submit" value="Login"> <input type="button" value="Reset"> Forgot <a href="">password</a> ?
     </form>
 <?php
 $contenu = ob_get_clean(); //efface la mémoire tampon dans la variable $content
