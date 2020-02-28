@@ -13,7 +13,12 @@ function checkLogin($username, $password)
     $requete = "SELECT userEmailAddress, userPsw FROM users;";
     $result = executeQuery($requete);
 
-    require_once 'model/dbConnector.php';
-    $queryResult = executeQuery($requete);
+    /* Checks the email & password */
+    foreach ($result as $user){
+        if ($username == $user['userEmailAddress'] && $password == $user['userPsw'] ){
+            return true;
+        }
+    }
+    return false;
 
 }

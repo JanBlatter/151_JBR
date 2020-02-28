@@ -17,13 +17,22 @@ function home()
     require "view/home.php";
 }
 
-function login($POST)
+function login()
 {
     $_GET['action'] = "login";
-    $username=@$_POST["username"];
-    $password=@$_POST["password"];
+    $username= @$_POST["username"];
+    $password= @$_POST["password"];
     if (isset($username) && isset($password)){
-        checkLogin($username, $password);
+        $result = checkLogin($username, $password);
+
+        if ($result == true){
+            $_SESSION['mail'] = $username;
+            require "view/home.php";
+        } else
+            {
+           require "view/login.php";
+        }
+
     }
     else{
         require "view/login.php";
@@ -32,4 +41,11 @@ function login($POST)
 
 }
 
+function logout(){
+    session_destroy();
+    require "view/home.php";
+}
 
+function register(){
+
+}

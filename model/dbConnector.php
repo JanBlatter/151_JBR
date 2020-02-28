@@ -4,7 +4,7 @@
  * User: Jan.BLATTER
  * Date: 07.02.2020
  */
-
+session_start();   // activation de la session.
 
 //Test client - must be remove to before using in a project
 //try to get a list of available tables in database
@@ -42,7 +42,6 @@ function openDBConnexion()
 
     try {
         $tempDbConnexion = new PDO($dsn, $userName, $userPwd);
-        echo "worked";
     } catch (PDOException $exception) {
         echo 'Connection failed: ' . $exception->getMessage();
     }
