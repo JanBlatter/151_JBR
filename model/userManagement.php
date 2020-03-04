@@ -10,7 +10,7 @@ require_once "dbConnector.php";
 
 function checkLogin($username, $password)
 {
-    $requete = "SELECT userEmailAddress, userPsw FROM users;";
+    $requete = "SELECT userEmailAddress, userPsw FROM users;";      // La commande MySQL
     $result = executeQuery($requete);
 
     /* Checks the email & password */
@@ -20,5 +20,13 @@ function checkLogin($username, $password)
         }
     }
     return false;
+
+}
+
+
+function CheckRegister($formR){
+    if ($form2['passwordRegister'] == $form2['passwordVerify']){
+        return true;
+    }
 
 }

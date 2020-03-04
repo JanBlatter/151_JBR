@@ -15,11 +15,12 @@ if (isset($_GET['action'])){            /* Si action est activé , alors va sur 
          break;/* Switch qui permet d'aller vers une page en fonction de l'action */
         case 'login':
             login();
+            break;
         case'logout':
             logout();
             break;
         case 'register':
-            register();
+            register(@$_POST);
             break;
         default:
             home();

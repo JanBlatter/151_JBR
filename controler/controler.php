@@ -20,32 +20,45 @@ function home()
 function login()
 {
     $_GET['action'] = "login";
-    $username= @$_POST["username"];
-    $password= @$_POST["password"];
-    if (isset($username) && isset($password)){
+    $username = @$_POST["username"];
+    $password = @$_POST["password"];
+    if (isset($username) && isset($password)) {
         $result = checkLogin($username, $password);
 
-        if ($result == true){
+        if ($result == true) {
             $_SESSION['mail'] = $username;
             require "view/home.php";
-        } else
-            {
-           require "view/login.php";
+        } else {
+            require "view/login.php";
         }
 
-    }
-    else{
+    } else {
         require "view/login.php";
     }
 
 
 }
 
-function logout(){
+function logout()
+{
     session_destroy();
     require "view/home.php";
 }
 
-function register(){
+function register()
+{
+    $_GET['action'] = "register";
+
+    require "view/register.php";
+}
+
+function registerIsCorrect($formR){
+    if (CheckRegister($formR)) {
+        home();
+        echo "home";
+    } else {
+        register();
+        echo "register";
+    }
 
 }
