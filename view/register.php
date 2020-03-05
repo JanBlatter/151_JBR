@@ -8,11 +8,14 @@
 ob_start(); //ouvre la mémoire tampon
 $titre="Rent  A Snow - Accueil"
 ?>
-    <form method="POST" action="/index.php?action=register">
+    <form method="POST" action="index.php?action=registerIsCorrect">
         <br>
         <h1> Créer un nouveau compte </h1>
         <b>Username:</b><br>
         <input  type="email" name="usernameRegister" value="" placeholder="enter email adress" required>
+        <br>
+        <b>Pseudo:</b><br>
+        <input  type="text" name="pseudo" value="" placeholder="enter pseudo" required>
         <br>
         <b>Password:</b><br>
         <input type="password" name="passwordRegister" value="" placeholder="enter Password" required>

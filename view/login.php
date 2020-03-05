@@ -8,7 +8,7 @@
 ob_start(); //ouvre la mémoire tampon
 $titre="Rent  A Snow - Accueil"
 ?>
-    <form class="form" method="POST" action="index.php?action=login">
+    <form class="form" method="POST" action="index.php?action=loginIsCorrect">
         <br>
         <h1> Login </h1>
         <b>Username:</b><br>

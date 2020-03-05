@@ -20,7 +20,13 @@ if (isset($_GET['action'])){            /* Si action est activé , alors va sur 
             logout();
             break;
         case 'register':
-            register(@$_POST);
+            register();
+            break;
+        case 'registerIsCorrect':
+            registerIsCorrect($_POST);
+            break;
+        case 'loginIsCorrect':
+            loginIsCorrect($_POST);
             break;
         default:
             home();
