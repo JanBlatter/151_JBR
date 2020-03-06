@@ -73,6 +73,7 @@
               <ul class="nav nav-pills ddmenu">
                   <!-- php if pour afficher ou retirer les ongles du menu -->
                   <li><a href="/index.php?action=home">Home</a></li>
+                  <li><a href="/index.php?action=snows">Snows</a></li>
                   <?php if (isset($_SESSION['mail'])) :?>
                       <li><a href="/index.php?action=logout">Logout</a></li>
                       <br><li>Connecté en tant que : <?php echo $_SESSION['mail']?></li>

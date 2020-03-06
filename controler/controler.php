@@ -9,7 +9,8 @@
  * Git source  :    [link]
  */
 
-require_once "model/userManagement.php";
+require_once "model/userManagement.php";                // Mettre ça sinon ça marche pas IMPORTANT
+require_once "model/snowsManagement.php";               // Mettre ça sinon ça marche pas IMPORTANT
 
 function home()
 {
@@ -50,4 +51,15 @@ function loginIsCorrect($formL){
     } else {
         login();
     }
+}
+
+function snows(){
+    $_GET['action'] = "snows";
+    $snowsResults=showSnows();
+    require "view/snows.php";
+
+}
+
+function displaySnows(){
+
 }

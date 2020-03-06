@@ -28,6 +28,9 @@ if (isset($_GET['action'])){            /* Si action est activé , alors va sur 
         case 'loginIsCorrect':
             loginIsCorrect($_POST);
             break;
+        case 'snows':
+            snows();
+            break;
         default:
             home();
     }
