@@ -19,6 +19,7 @@ function CheckLogin($formL)
     if ($result) {
         if (password_verify($password, $result[0]['userPsw'])) {            // si le compte existe , vérifie le password haché
             $_SESSION['e-mail'] = $formL['username'];
+            return true;
         }else{
             return false;
         }

@@ -46,9 +46,8 @@ function registerIsCorrect($formR){
 }
 
 function loginIsCorrect($formL){
-    if (CheckLogin($formL) == true) {
+    if (CheckLogin($formL)) {
         home();
-        echo "test";
     } else {
         login();
     }
@@ -67,6 +66,5 @@ function panier(){
 }
 
 function displaySnows(){
-    login();
-    require "view/panier.php";
+
 }
