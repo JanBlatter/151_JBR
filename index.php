@@ -31,6 +31,9 @@ if (isset($_GET['action'])){            /* Si action est activé , alors va sur 
         case 'snows':
             snows();
             break;
+        case 'panier':
+            panier();
+            break;
         default:
             home();
     }

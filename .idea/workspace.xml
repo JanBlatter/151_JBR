@@ -2,8 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f6b2ab00-b284-48bf-95b3-e5b3b6546a1d" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/model/snowsManagement.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/view/snows.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/view/panier.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/controler/controler.php" beforeDir="false" afterPath="$PROJECT_DIR$/controler/controler.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/index.php" afterDir="false" />
@@ -27,6 +26,7 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="PhpDebugGeneral" listening_started="true" />
   <component name="PhpServers">
     <servers>
       <server host="localhost" id="5a540663-9c26-44e6-936a-c21d57c7f07e" name="localhost" port="8080" />
@@ -92,6 +92,8 @@
       <workItem from="1583329586888" duration="4053000" />
       <workItem from="1583411659220" duration="9520000" />
       <workItem from="1583489773249" duration="3527000" />
+      <workItem from="1583744694931" duration="244000" />
+      <workItem from="1583931158919" duration="6441000" />
     </task>
     <servers />
   </component>
@@ -128,5 +130,16 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="1877" height="282" key="GridCell.Tab.0.right/0.0.1920.1040/-1680.34.1680.1010@0.0.1920.1040" timestamp="1582373697492" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="php">
+          <url>file://$PROJECT_DIR$/controler/controler.php</url>
+          <line>48</line>
+          <option name="timeStamp" value="3" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>
