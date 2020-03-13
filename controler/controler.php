@@ -26,8 +26,9 @@ function login()
 
 function logout()
 {
-    session_destroy();
-    require "view/home.php";
+    $_SESSION = session_destroy();
+    home();
+
 }
 
 function register()

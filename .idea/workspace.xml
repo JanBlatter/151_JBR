@@ -5,6 +5,7 @@
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/controler/controler.php" beforeDir="false" afterPath="$PROJECT_DIR$/controler/controler.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/model/userManagement.php" beforeDir="false" afterPath="$PROJECT_DIR$/model/userManagement.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/view/register.php" beforeDir="false" afterPath="$PROJECT_DIR$/view/register.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -90,6 +91,8 @@
       <workItem from="1583489773249" duration="3527000" />
       <workItem from="1583744694931" duration="244000" />
       <workItem from="1583931158919" duration="7068000" />
+      <workItem from="1584017295358" duration="91000" />
+      <workItem from="1584093379680" duration="3103000" />
     </task>
     <servers />
   </component>

@@ -23,7 +23,16 @@ $titre="Rent  A Snow - Accueil"
         <b>Confirm Password:</b><br>
         <input type="password" name="passwordVerify" value="" placeholder="enter the same password" required>
         <br>
-        <input type="submit" value="Login"> <input type="button" value="Reset"> Forgot <a href="">password</a> ?
+        <p>Type de compte:</p>
+        <input type="radio" id="client" name="type" value="client" checked>
+        <label for="client">client</label>
+        <input type="radio" id="admin" name="type" value="admin">
+        <label for="admin">admin</label><br>
+
+        <input type="submit" value="Login"> <input type="button" value="Reset"> Forgot <a href="">password</a>
+
+
+
     </form>
 <?php
 $contenu = ob_get_clean(); //efface la mémoire tampon dans la variable $content
