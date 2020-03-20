@@ -35,7 +35,8 @@ function CheckRegister($formR)
 {
     $email = $formR['usernameRegister'];                // le nom du formulaire est dans email
     $pseudo = $formR['pseudo'];
-    $requeteR = "SELECT userEmailAddress, pseudo FROM users WHERE userEmailAddress ='" . $formR['usernameRegister'] . "';";   // requête , vérifie si l'usernameregister existe déjà
+    $username =$formR['usernameRegister'];
+    $requeteR = "SELECT userEmailAddress, pseudo FROM users WHERE userEmailAddress ='" .$username. "';";   // requête , vérifie si l'usernameregister existe déjà
     $queryResult = executeQuery($requeteR);
 
     if ($queryResult) {
@@ -43,7 +44,7 @@ function CheckRegister($formR)
     } else {
         if ($formR['passwordRegister'] == $formR['passwordVerify']) {    // si le password du formulaire register est identique  avec la confirmation du mdp, hash le mdp.
             $pwdHash = password_hash($formR['passwordRegister'], PASSWORD_DEFAULT);
-            $requeteAdd = "INSERT INTO snows.users (userEmailAddress, userHashPsw, pseudo, userType) VALUES ('$email', '$pwdHash','$pseudo');";       // ajoute le compte dans la base de donnée
+            $requeteAdd = "INSERT INTO snows.users (userEmailAddress, userHashPsw, pseudo, userType) VALUES ('$email', '$pwdHash','$pseudo',NULL);";       // ajoute le compte dans la base de donnée
             executeQuery($requeteAdd);
 
             $_SESSION['e-mail'] = $formR['usernameRegister'];  //ouvre la session dès que la personne créé un compte.
