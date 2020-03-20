@@ -36,7 +36,7 @@ function openDBConnexion()
     $port = 3306;
     $charset = 'utf8';
     $dbName = 'snows';
-    $userName = 'Jan';
+    $userName = 'root';
     $userPwd = 'Jantiti123';
     $dsn = $sqlDriver . ':host=' . $hostname . ';dbname=' . $dbName . ';port=' . $port . ';charset=' . $charset;
 
