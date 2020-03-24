@@ -65,6 +65,8 @@ function panier(){
     require "view/panier.php";
 }
 
-function displaySnows(){
-
+function snowsProfil(){
+    $_GET['action'] = "snowsProfil";
+    $snowsResults=displaySnows();
+    require "view/snowsProfil.php";
 }
