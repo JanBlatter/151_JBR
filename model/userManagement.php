@@ -13,6 +13,7 @@ function CheckLogin($formL)
     $password = $formL['password'];                 // le password du formulaire --> dans la variable password
     $email = $formL['username'];                    // username du formulaire --> dans la variable email
 
+
     $requete = "SELECT userEmailAddress, userHashPsw FROM users where userEmailAddress ='$email';";      // La commande MySQL , vérifie si l'email existe
     $result = executeQuery($requete);
 
@@ -21,9 +22,16 @@ function CheckLogin($formL)
 
                               // si le compte existe , vérifie le password haché
         $_SESSION['e-mail'] = $formL['username'];
+
+        $test = CheckAdmin($email);
+        if ($test == 1){
+            $_SESSION['admin'] = "admin";
+        }
+        else{
+            $_SESSION['admin'] = "client";
+        }
         return true;
     } else {
-        echo "marche";
         return false;
     }
 }else{ return false;
@@ -56,3 +64,19 @@ function CheckRegister($formR)
         }
     }
 }
+
+Function CheckAdmin($email){
+    $CheckAdmin = "Select userType from users where userEmailAddress = '$email'";
+    $result = executeQuery($CheckAdmin);
+
+    if ($result[0]['userType'] == 1){
+        return 1;
+    }
+    else{
+    return 0;
+    }
+
+
+}
+
+
