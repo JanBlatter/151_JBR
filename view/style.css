@@ -1,0 +1,24 @@
+
+
+.table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+.table, td, th {
+    border: 1px solid dimgrey;
+    text-align: left;
+}
+
+.title {
+    text-align: center;
+}
+
+.th, td {
+     padding: 15px;
+ }
+
+.img{
+    width :150px;
+    height:150px;
+}

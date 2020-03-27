@@ -20,6 +20,13 @@
   <component name="FavoritesManager">
     <favorites_list name="151_2019_startproject" />
   </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="CSS File" />
+      </list>
+    </option>
+  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
@@ -40,6 +47,7 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="restartRequiresConfirmation" value="false" />
@@ -101,6 +109,8 @@
       <workItem from="1585062974535" duration="6737000" />
       <workItem from="1585139530072" duration="8940000" />
       <workItem from="1585148899105" duration="2414000" />
+      <workItem from="1585227597461" duration="734000" />
+      <workItem from="1585307465288" duration="2921000" />
     </task>
     <servers />
   </component>
@@ -125,10 +135,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="855" y="287" key="#CLI_Interpreters/0.0.1920.1040/-1680.34.1680.1010@0.0.1920.1040" timestamp="1584630136233" />
-    <state x="740" y="274" key="FileChooserDialogImpl" timestamp="1584615680116">
+    <state x="740" y="274" key="FileChooserDialogImpl" timestamp="1585227720783">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="740" y="274" key="FileChooserDialogImpl/0.0.1920.1040/-1680.34.1680.1010@0.0.1920.1040" timestamp="1584615680116" />
+    <state x="740" y="274" key="FileChooserDialogImpl/0.0.1920.1040/-1680.34.1680.1010@0.0.1920.1040" timestamp="1585227720783" />
     <state width="1414" height="333" key="GridCell.Tab.0.bottom" timestamp="1585151314875">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -185,24 +195,13 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="125" y="176" key="SettingsEditor/0.0.1920.1040/-1680.34.1680.1010@0.0.1920.1040" timestamp="1584630151470" />
-    <state x="656" y="342" key="com.intellij.ide.util.TipDialog" timestamp="1585148899182">
+    <state x="656" y="342" key="com.intellij.ide.util.TipDialog" timestamp="1585227609307">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="656" y="342" key="com.intellij.ide.util.TipDialog/0.0.1920.1040/-1680.34.1680.1010@0.0.1920.1040" timestamp="1585148899182" />
+    <state x="656" y="342" key="com.intellij.ide.util.TipDialog/0.0.1920.1040/-1680.34.1680.1010@0.0.1920.1040" timestamp="1585227609307" />
     <state x="521" y="255" key="com.intellij.xdebugger.impl.breakpoints.ui.BreakpointsDialogFactory$2" timestamp="1584695594821">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="521" y="255" key="com.intellij.xdebugger.impl.breakpoints.ui.BreakpointsDialogFactory$2/0.0.1920.1040/-1680.34.1680.1010@0.0.1920.1040" timestamp="1584695594821" />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="php">
-          <url>file://$PROJECT_DIR$/model/userManagement.php</url>
-          <line>59</line>
-          <option name="timeStamp" value="15" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
   </component>
 </project>

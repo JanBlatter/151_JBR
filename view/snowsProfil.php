@@ -11,46 +11,59 @@ ob_start();
 $rows = 0; // Column count
 
 ?>
+    <head>
+    <link rel="stylesheet" href="view/style.css">
+    </head>
+    <html lang="fr">
+    <table>
+        <div>
+            <article>
+                <header>
+                    <h2> Nos snows </h2>
+                    <div class="yox-view">
+                        <tr>
+                            <th class="title"><strong>Code</strong></th>
+                            <th class="title"><strong>Marque</strong></th>
+                            <th class="title"><strong>Modèle</strong></th>
+                            <th class="title"><strong>Longueur</strong></th>
+                            <th class="title"><strong>Prix </strong>  </th>
+                            <th class="title"><strong>Disponibilité </strong></th>
+                            <th class="title"><strong>Photo </strong></th>
+                        </tr>
 
-<article>
-    <header>
-        <h2> Nos snows</h2>
-        <div class="yox-view">
+                        <?php foreach ($snowsResults as $result) : ?>
+                            <?php $rows++; ?>
+                            <?php if ($rows % 4) : // tests to have 4 items / line ?>
+                                <div class="row-fluid">
+                                <ul class="thumbnails">
+                                <?php $rows = 0; ?>
+                            <?php endif ?>
+                            <tr>
+                                <td><?= $result['code'];?></td>
+                                <td><?= $result['brand']; ?></td>
+                                <td><?= $result['model']; ?></td>
+                                <td><?= $result['snowLength']; ?> cm</td>
+                                <td><?= $result['dailyPrice']; ?>.- / jour</td>
+                                <td><?= $result['qtyAvailable']; ?></td>
+                                <td><a href="view/content/images/<?= $result['code']; ?>.jpg" target="blank"><img class="img" src="<?= $result['photo']; ?>" alt="<?= $result['code']; ?>"></a></td>
+                                <?php $result++ ?>
+                            </tr>
+                            <?php if ($rows % 4) : ?>
+                                </ul>
+                                </div>
+                            <?php endif ?>
+                        <?php endforeach ?>
 
-
-            <?php foreach ($snowsResults as $result) : ?>
-                <?php $rows++; ?>
-                <?php if ($rows%4) : // tests to have 4 items / line ?>
-                    <div class="row-fluid">
-                    <ul class="thumbnails">
-                    <?php $rows=0;?>
-                <?php endif ?>
-
-                <li class="span3">
-                    <div class="thumbnail">
-                        <a href="view/content/images/<?= $result['code']; ?>.jpg" target="blank"><img src="<?= $result['photo']; ?>" alt="<?= $result['code']; ?>" ></a>
-                        <div class="caption">
-                            <h3><a href="index.php?action=displayASnow&code=<?= $result['code']; ?>"><?= $result['code']; ?></a></h3>
-                            <p><strong>Marque : </strong><?= $result['brand']; ?></p>
-                            <p><strong>ModÃ¨le : </strong><?= $result['model']; ?></p>
-                            <p><strong>Longueur : </strong><?= $result['snowLength']; ?> cm</p>
-                            <p><strong>Prix :</strong> CHF <?= $result['dailyPrice']; ?>.- / jour</p>
-                            <p><strong>DisponibilitÃ© : </strong><?= $result['qtyAvailable']; ?></p>
-                        </div>
                     </div>
-                </li>
-
-                <?php if ($rows%4) :?>
-                    </ul>
-                    </div>
-                <?php endif ?>
-            <?php endforeach ?>
-
+                </header>
+            </article>
+            <hr/>
         </div>
-    </header>
-</article>
-<hr/>
+    </table>
+    </html>
+
 <?php
+
 
 $contenu = ob_get_clean();
 require 'gabarit.php';

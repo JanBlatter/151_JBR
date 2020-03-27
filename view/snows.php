@@ -29,7 +29,7 @@ $rows=0; // Column count
                         <?php $rows=0;?>
                     <?php endif ?>
 
-                    <li class="span3">
+                    <li>
                         <div class="thumbnail">
                             <a href="view/content/images/<?= $result['code']; ?>.jpg" target="blank"><img src="<?= $result['photo']; ?>" alt="<?= $result['code']; ?>" ></a>
                             <div class="caption">
