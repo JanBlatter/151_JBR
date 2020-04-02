@@ -3,6 +3,7 @@
 .table {
     border-collapse: collapse;
     width: 100%;
+
 }
 
 .table, td, th {
@@ -15,10 +16,10 @@
 }
 
 .th, td {
-     padding: 15px;
+     padding: 30px;
  }
 
 .img{
-    width :150px;
-    height:150px;
+    width :200px;
+    height:100px;
 }

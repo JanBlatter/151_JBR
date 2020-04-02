@@ -35,7 +35,13 @@ if (isset($_GET['action'])){            /* Si action est activé , alors va sur 
             panier();
             break;
         case'snowsProfil':
-            snowsProfil();
+            snowsProfil('code');
+            break;
+        case 'vue_add_snow' :
+            addSnow();
+            break;
+        case'deleteSnow':
+            delSnow();
             break;
         default:
             home();
