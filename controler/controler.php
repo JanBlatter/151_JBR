@@ -79,3 +79,18 @@ function delSnow(){
 
 }
 
+function updSnow($update)
+{
+    if (isset($_GET['code']))
+    {
+        $results = getASnow($_GET['code']);
+        $_POST = $results;
+        require 'view/UpdatePage.php';
+        exit();
+    }
+    else{
+        updateSnow($update);
+    require 'view/home.php';
+}
+}
+

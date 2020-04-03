@@ -37,8 +37,8 @@ if (isset($_GET['action'])){            /* Si action est activé , alors va sur 
         case'snowsProfil':
             snowsProfil('code');
             break;
-        case 'vue_add_snow' :
-            addSnow();
+        case 'UpdatePage':
+            updSnow($_POST);
             break;
         case'deleteSnow':
             delSnow();

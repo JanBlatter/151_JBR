@@ -27,3 +27,18 @@ function deleteSnow(){          // Supprime le snow selectioné
     $resultDeleteSnows = executeQuery($DeleteSnows);
     return $resultDeleteSnows;
 }
+
+function GetASnow(){                // selectione le snow sélectioné
+    $results="SELECT * FROM snows WHERE code='".$_GET['code']."'";
+    $requestGetASnow = executeQuery($results);
+    return $requestGetASnow;
+
+}
+
+function updateSnow($update)
+{
+    $UpdateSnow = "UPDATE snows SET code ='{$update['codeUpdate']}',brand ='{$update['brandUpdate']}',model ='{$update['modelUpdate']}',snowLength ={$update['snowLengthUpdate']}, qtyAvailable={$update['qtyAvailableUpdate']},description ='{$update['descriptionUpdate']}',dailyPrice ={$update['dailyPriceUpdate']} WHERE code ={$update['codeUpdate']}";
+    require_once "dbConnector.php";
+    executeQuery($UpdateSnow);
+
+}

@@ -32,6 +32,7 @@ $rows = 0; // Column count
                             <th class="title"><strong>Prix </strong>  </th>
                             <th class="title"><strong>Disponibilité </strong></th>
                             <th class="title"><strong>Photo </strong></th>
+                            <th class="title"><strong>Modifier</strong></th>
                             <th class="title"><strong>Supprimer</strong></th>
                         </tr>
 
@@ -50,6 +51,7 @@ $rows = 0; // Column count
                                 <td><?= $result['dailyPrice']; ?>.- / jour</td>
                                 <td><?= $result['qtyAvailable']; ?></td>
                                 <td><a href="view/content/images/<?= $result['code']; ?>.jpg" target="blank"><img class="img" src="<?= $result['photo']; ?>" alt="<?= $result['code']; ?>"></a></td>
+                                <th><a href="index.php?action=UpdatePage&code=<?= $result['code']; ?>"><input type="button" value="Modifier"></a></th>
                                 <td><button><a href="/index.php?action=deleteSnow&code=<?=$result['code'];?>">Supprimer</a></button></td>
                                 <?php $result++ ?>
                             </tr>
